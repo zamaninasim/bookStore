@@ -1,2 +1,4 @@
-package ir.maktab.service;public class BookService {
+package ir.maktab.service;
+
+public class BookService {
 }

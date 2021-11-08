@@ -6,6 +6,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Book {
+    private Integer id;
     private String authorName;
     private String ISBN;
     private String bookTitle;
@@ -14,7 +15,8 @@ public class Book {
     private Integer soldNumber;
     private Long soldTotalPrice;
 
-    public Book(String authorName, String ISBN, String bookTitle, Integer publishedYear, Long price, Integer soldNumber) {
+    public Book(Integer id, String authorName, String ISBN, String bookTitle, Integer publishedYear, Long price, Integer soldNumber) {
+        this.id = id;
         this.authorName = authorName;
         this.ISBN = ISBN;
         this.bookTitle = bookTitle;
